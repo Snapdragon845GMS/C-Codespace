@@ -13,8 +13,8 @@ RUN if [ "${REINSTALL_CMAKE_VERSION_FROM_SOURCE}" != "none" ]; then \
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y --no-install-recommends \
         build-essential \
-        gcc-13 \
-        g++-13 \
+        gcc \
+        g++ \
         gdb \
         binutils \
         make \
